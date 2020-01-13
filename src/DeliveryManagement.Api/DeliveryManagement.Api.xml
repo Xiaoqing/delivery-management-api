@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DeliveryManagement.Api</name>
+    </assembly>
+    <members>
+        <member name="M:DeliveryManagement.Api.Controllers.DeliveryController.Get(System.String)">
+            <summary>
+            Get a delivery by id.
+            </summary>
+            <param name="id">The id of the delivery</param>
+            <returns>The delivery for the id</returns>
+            <response code="200">The delivery for the id</response>
+            <response code="404">If delivery for the id doesn't exist</response>
+        </member>
+        <member name="M:DeliveryManagement.Api.Controllers.DeliveryController.Create(DeliveryManagement.Api.Requests.Delivery)">
+            <summary>
+            Get a delivery by id.
+            </summary>
+            <param name="delivery">The delivery to be created</param>
+            <returns>The newly created delivery item</returns>
+            <response code="201">The newly created delivery item</response>
+            <response code="409">If the order number in the delivery request is already associated with another delivery</response>
+        </member>
+    </members>
+</doc>

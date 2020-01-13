@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  delivermanagement.api:
+    image: ${DOCKER_REGISTRY-}delivermanagementapi
+    build:
+      context: .
+      dockerfile: src/DeliveryManagement.Api/Dockerfile
+
