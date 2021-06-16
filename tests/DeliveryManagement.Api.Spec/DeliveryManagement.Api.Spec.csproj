@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DeliveryInputValidation.spec.md" />
+    <None Remove="DeliveryManagement.spec.md" />
+    <None Remove="InputValidation.spec.md" />
+    <None Remove="specfirst.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="DeliveryInputValidation.spec.md" />
+    <AdditionalFiles Include="DeliveryManagement.spec.md" />
+    <AdditionalFiles Include="specfirst.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SpecFirst.xUnit" Version="1.0.0-rc.24" />
+  </ItemGroup>
+
+  <!--<ItemGroup>
+    <ProjectReference Include="D:\DEV\Projects\spec-first\SpecFirst.xUnit\src\SpecFirst.xUnit\SpecFirst.xUnit.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>-->
+
+</Project>
